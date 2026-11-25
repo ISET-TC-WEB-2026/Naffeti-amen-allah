@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Commande</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <i id="c" class="fa-solid fa-couch"></i>
+        <div>
+            <h1 id="tit">FurnitureShop Mobilier</h1>
+            <p id="p">Votre boutique du meuble</p>
+        </div>
+        <nav>
+            <a href="index.html">Acceuil <i class="fa-solid fa-house-user"></i></a>
+            <a href="produits.html">Catalogue <i class="fa-solid fa-list"></i></a>
+            <a href="panier.html">Panier <i class="fa-solid fa-basket-shopping"></i></a>
+            <a href="commande.html" class="active">Commander <i class="fa-solid fa-cart-shopping"></i></a>
+        </nav>
+    </header>
+    <div>
+        <p>Passer votre commande</p>
+    </div>
+    <form action="">
+        <fieldset>
+            <fieldset>
+                <legend>Vos informations</legend>
+                <label for="np">Nom et prénom :</label>
+                <input type="text" id="np" name="np" required><br>
+                <label for="mail">Adresse e-mail :</label>
+                <input type="email" id="mail" name="mail" required><br>
+                <label for="tel">Numéro du téléphone :</label>
+                <input type="tel" id="tel" name="tel" required><br>
+                <label for="np">Adresse de livraison :</label>
+                <input type="text" id="adr" name="adr" required>
+            </fieldset>
+            <fieldset>
+                <legend>Mode de livraison</legend>
+                <input type="radio" id="d" value="Livraision a la maison" checked name="liv">Livraision a la maison <br>
+                <input type="radio" id="b" value="Achat en boutique" name="liv">Achat en boutique
+                <i class="fa-solid fa-truck"></i>
+            </fieldset>
+            <fieldset>
+                <legend>Mode de paiement</legend>
+                <input type="radio" id="liv" value="Paiement à la livraison" checked name="pai">Paiement à la livraison<br>
+                <input type="radio" id="bou" value="Paiement dans le boutique" name="pai">Paiement dans le boutique <br>
+                <input type="radio" id="car" value="Carte bancaire" name="pai">Carte bancaire
+                <i class="fa-solid fa-credit-card"></i>
+            </fieldset>
+            <input type="submit" value="Confirmer votre commandande">
+        </fieldset>
+    </form>
 </body>
 </html>

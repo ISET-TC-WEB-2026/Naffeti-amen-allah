@@ -4,75 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FurnitureShop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="icon" href="images/banniere-accueil.jpg">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>FurnitureShop Mobilier</h1>
-        <p>Votre boutique du meuble</p>
+        <i id="c" class="fa-solid fa-couch"></i>
+        <div>
+            <h1 id="tit">FurnitureShop Mobilier</h1>
+            <p id="p">Votre boutique du meuble</p>
+        </div>
         <nav>
-            <a href="index.html">Acceuil</a>
-            <a href="produits.html">Catalogue</a>
-            <a href="panier.html">Panier</a>
-            <a href="commande.html">Commander</a>
+            <a href="index.html" class="active">Accueil <i class="fa-solid fa-house-user"></i></a>
+            <a href="produits.html">Catalogue <i class="fa-solid fa-list"></i></a>
+            <a href="panier.html">Panier <i class="fa-solid fa-basket-shopping"></i></a>
+            <a href="commande.html">Commander <i class="fa-solid fa-cart-shopping"></i></a>
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Bienvenue chez FurnitureShop</h2>
-            <p>Découvrez notre collection de meubles pour votre maison et votre bureau</p>
-            <img src="images/banniere-accueil.jpg" alt="">
-            <a href="produits.html">Découvrir nos produits </a>
+        <section id="sec">
+            <img id="im" src="images/acceuil.jpeg" alt="">
+            <a href="produits.html">Découvrir nos produits</a>
         </section>
-        <section>
+        <section id="cat">
             <h2>Nos catégories</h2>
-            <article>
-                <img src="images/produit1.jpg" alt="tables">
-                <h3>Tables</h3>
+            <article class="cat">
+                <img src="images/produit1.jpg" alt="tables" class="l">
+                <h3 class="nm">Tables</h3>
             </article>
-            <article>
-                <img src="images/produit2.jpg" alt="Chaises">
-                <h3>Chaises</h3>
+            <article class="cat">
+                <img src="images/produit2.jpg" alt="Chaises" class="l">
+                <h3 class="nm">Chaises</h3>
             </article>
-            <article>
-                <img src="images/produit3.jpg" alt="Fauteuils">
-                <h3>Fauteuils</h3>
+            <article class="cat">
+                <img src="images/produit3.jpg" alt="Fauteuils" class="l">
+                <h3 class="nm">Fauteuils</h3>
             </article>
-            <article>
-                <img src="images/produit4.jpg" alt="Bureaux">
-                <h3>Bureaux</h3>
+            <article class="cat">
+                <img src="images/produit4.jpg" alt="Bureaux" class="l">
+                <h3 class="nm">Bureaux</h3>
             </article>
-            <article>
-                <img src="images/produit5.jpg" alt="Etagères">
-                <h3>Etagères</h3>
+            <article class="cat">
+                <img src="images/produit5.jpg" alt="Etagères" class="l">
+                <h3 class="nm">Etagères</h3>
             </article>
         </section>
-        <section>
+        <section id="pop">
             <h2>Nos produits populaires</h2>
-            <article>
-                <img src="images/produit1.jpg" alt="tables">
-                <h3>Table en bois</h3>
+            <article class="pop">
+                <img src="images/produit1.jpg" alt="tables" class="l">
+                <h3 class="nm">Table en bois</h3>
                 <h4>450 DT</h4>
                 <a href="produit.html">Voir le produit</a>
             </article>
-            <article>
-                <img src="images/produit2.jpg" alt="Chaises">
-                <h3>Chaise moderne</h3>
+            <article class="pop">
+                <img src="images/produit2.jpg" alt="Chaises" class="l">
+                <h3 class="nm">Chaise moderne</h3>
                 <h4>120 DT</h4>
                 <a href="produit.html">Voir le produit</a>
             </article>
-            <article>
-                <img src="images/produit3.jpg" alt="Fauteuils">
-                <h3>Fauteuil comfortable</h3>
+            <article class="pop">
+                <img src="images/produit3.jpg" alt="Fauteuils" class="l">
+                <h3 class="nm">Fauteuil comfortable</h3>
                 <h4>380 DT</h4>
                 <a href="produit.html">Voir le produit</a>
             </article>
-            <article>
-                <img src="images/produit4.jpg" alt="Bureaux">
-                <h3>Bureau de travail</h3>
+            <article class="pop">
+                <img src="images/produit4.jpg" alt="Bureaux" class="l">
+                <h3 class="nm">Bureau de travail</h3>
                 <h4>520 DT</h4>
                 <a href="produit.html">Voir le produit</a>
-                
             </article>
         </section>
     </main>
